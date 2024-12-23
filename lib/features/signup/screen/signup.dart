@@ -22,24 +22,12 @@ class _HomeScreenState extends State<SignupScreen> {
   @override
   void initState() {
     super.initState();
-    email.addListener(() {
-      setState(() {});
-    });
-    password.addListener(() {
-      setState(() {});
-    });
-    name.addListener(() {
-      setState(() {});
-    });
-    id.addListener(() {
-      setState(() {});
-    });
-    phone.addListener(() {
-      setState(() {});
-    });
-    token.addListener(() {
-      setState(() {});
-    });
+    email.addListener(() {});
+    password.addListener(() {});
+    name.addListener(() {});
+    id.addListener(() {});
+    phone.addListener(() {});
+    token.addListener(() {});
   }
 
   @override
@@ -72,13 +60,7 @@ class _HomeScreenState extends State<SignupScreen> {
                     'Get Started',
                     style: headingStyle(),
                   ),
-                  SizedBox(
-                    height: 40,
-                  ),
                   SignupForm(formKey: _formKey),
-                  SizedBox(
-                    height: 40,
-                  ),
                   SizedBox(
                     width: double.infinity,
                     height: 48,

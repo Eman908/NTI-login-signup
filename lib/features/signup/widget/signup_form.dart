@@ -15,7 +15,7 @@ class SignupForm extends StatelessWidget {
     return Form(
       key: _formKey,
       child: SizedBox(
-        height: 200,
+        height: 550,
         child: ListView.builder(
           itemCount: signInfo.length,
           itemBuilder: (context, index) {

@@ -4,6 +4,7 @@ import 'package:login_signup/features/signup/screen/signup.dart';
 
 List<TextFieldModel> signInfo = [
   TextFieldModel(
+    prefixIcon: Icons.person_2_outlined,
     labelText: 'Name',
     hintText: 'Enter Your Name',
     controller: name,

@@ -10,7 +10,7 @@ class CustomInputField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       keyboardType: f.type,
-      autovalidateMode: AutovalidateMode.onUserInteraction,
+      autovalidateMode: AutovalidateMode.onUnfocus,
       validator: f.validator,
       obscureText: f.isPassword,
       controller: f.controller,

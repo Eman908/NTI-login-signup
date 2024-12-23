@@ -18,12 +18,8 @@ class _HomeScreenState extends State<LoginScreen> {
   @override
   void initState() {
     super.initState();
-    email.addListener(() {
-      setState(() {});
-    });
-    password.addListener(() {
-      setState(() {});
-    });
+    email.addListener(() {});
+    password.addListener(() {});
   }
 
   @override
@@ -55,9 +51,6 @@ class _HomeScreenState extends State<LoginScreen> {
                     style: headingStyle(),
                   ),
                   LoginForm(formKey: _formKey),
-                  SizedBox(
-                    height: 40,
-                  ),
                   SizedBox(
                     width: double.infinity,
                     height: 48,
