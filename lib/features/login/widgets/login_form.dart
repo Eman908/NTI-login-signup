@@ -15,7 +15,7 @@ class LoginForm extends StatelessWidget {
     return Form(
       key: _formKey,
       child: SizedBox(
-        height: 220,
+        height: 250,
         child: ListView.builder(
           itemCount: loginInfo.length,
           itemBuilder: (context, index) {

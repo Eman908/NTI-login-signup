@@ -64,7 +64,10 @@ class _HomeScreenState extends State<SignupScreen> {
                   SizedBox(
                     width: double.infinity,
                     height: 48,
-                    child: SubmitButton(formKey: _formKey),
+                    child: SubmitButton(
+                      formKey: _formKey,
+                      btnText: 'SignUp',
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,

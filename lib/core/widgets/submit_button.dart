@@ -4,11 +4,12 @@ import 'package:login_signup/core/style/button_style.dart';
 class SubmitButton extends StatelessWidget {
   const SubmitButton({
     super.key,
+    required this.btnText,
     required GlobalKey<FormState> formKey,
   }) : _formKey = formKey;
 
   final GlobalKey<FormState> _formKey;
-
+  final String btnText;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
@@ -34,7 +35,7 @@ class SubmitButton extends StatelessWidget {
         }
       },
       child: Text(
-        'Login',
+        btnText,
         style: buttonStyle(),
       ),
     );
