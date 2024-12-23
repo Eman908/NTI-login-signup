@@ -39,6 +39,7 @@ class _HomeScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
             Image.asset(
@@ -52,9 +53,6 @@ class _HomeScreenState extends State<LoginScreen> {
                   Text(
                     'Welcome Back',
                     style: headingStyle(),
-                  ),
-                  SizedBox(
-                    height: 40,
                   ),
                   LoginForm(formKey: _formKey),
                   SizedBox(

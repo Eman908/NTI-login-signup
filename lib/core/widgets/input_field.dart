@@ -1,42 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup/core/widgets/border_style.dart';
+import 'package:login_signup/core/widgets/textfield_model.dart';
 
 class CustomInputField extends StatelessWidget {
-  const CustomInputField({
-    required this.labelText,
-    required this.hintText,
-    required this.controller,
-    super.key,
-    this.prefixIcon,
-    this.suffixIcons,
-    required this.isPassword,
-    required this.validator,
-    this.type,
-  });
+  const CustomInputField({super.key, required this.f});
 
-  final TextEditingController controller;
-  final IconData? prefixIcon;
-  final String labelText;
-  final String hintText;
-  final bool isPassword;
-  final IconData? suffixIcons;
-  final String? Function(String?)? validator;
-  final TextInputType? type;
+  final TextFieldModel f;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      keyboardType: type,
+      keyboardType: f.type,
       autovalidateMode: AutovalidateMode.onUserInteraction,
-      validator: validator,
-      obscureText: isPassword,
-      controller: controller,
+      validator: f.validator,
+      obscureText: f.isPassword,
+      controller: f.controller,
       decoration: InputDecoration(
-        labelText: labelText,
+        labelText: f.labelText,
         labelStyle: TextStyle(color: Colors.blueAccent),
         alignLabelWithHint: true,
-        hintText: hintText,
-        prefixIcon: Icon(prefixIcon, color: Colors.blueAccent),
-        suffixIcon: Icon(suffixIcons),
+        hintText: f.hintText,
+        prefixIcon: Icon(f.prefixIcon, color: Colors.blueAccent),
+        suffixIcon: Icon(f.suffixIcons),
         contentPadding: const EdgeInsets.symmetric(vertical: 20),
         enabledBorder: inputBorderStyle(Colors.grey),
         focusedBorder: inputBorderStyle(Colors.blueAccent),
