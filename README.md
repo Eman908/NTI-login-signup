@@ -3,8 +3,8 @@
 A new Flutter project.
 
 ## ScreenShots
-![Screenshot_1734950493](https://github.com/user-att![Screenshot_1734950522](https://github.com/user-attachments/assets/a8c0f9d2-c662-4829-83bb-82fe30b57765)
-achments/assets/38bb0bfe-db1e-47a4-9938-af1da65fee6f)
+![Screenshot_1734950493](https://github.com/user-attachments/assets/6dd29f9c-11aa-4cfd-a411-88fce933d10d)
+![Screenshot_1734950522](https://github.com/user-attachments/assets/b649239b-5510-4d83-8067-e994cf13761c)
 
 
 ## Getting Started
