@@ -11,6 +11,7 @@ class CustomInputField extends StatelessWidget {
     this.suffixIcons,
     required this.isPassword,
     required this.validator,
+    this.type,
   });
 
   final TextEditingController controller;
@@ -20,9 +21,11 @@ class CustomInputField extends StatelessWidget {
   final bool isPassword;
   final IconData? suffixIcons;
   final String? Function(String?)? validator;
+  final TextInputType? type;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: type,
       autovalidateMode: AutovalidateMode.onUserInteraction,
       validator: validator,
       obscureText: isPassword,

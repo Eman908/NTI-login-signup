@@ -34,6 +34,7 @@ class SignupForm extends StatelessWidget {
             },
           ),
           CustomInputField(
+            type: TextInputType.number,
             controller: id,
             prefixIcon: Icons.payment_outlined,
             suffixIcons: null,
@@ -50,6 +51,7 @@ class SignupForm extends StatelessWidget {
             },
           ),
           CustomInputField(
+            type: TextInputType.number,
             controller: phone,
             prefixIcon: Icons.phone_outlined,
             suffixIcons: null,
