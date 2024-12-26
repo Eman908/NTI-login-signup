@@ -70,6 +70,7 @@ List<TextFieldModel> signInfo = [
   ),
   TextFieldModel(
     controller: password,
+    icon: Icons.visibility,
     suffixIcons: Icons.visibility_off_outlined,
     labelText: 'Password',
     hintText: 'Enter Password',

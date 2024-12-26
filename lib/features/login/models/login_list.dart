@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup/core/widgets/textfield_model.dart';
-import 'package:login_signup/features/login/screens/login.dart';
+import 'package:login_signup/features/login/screen/login.dart';
 
 List<TextFieldModel> loginInfo = [
   TextFieldModel(
@@ -21,6 +21,7 @@ List<TextFieldModel> loginInfo = [
   ),
   TextFieldModel(
     controller: password,
+    icon: Icons.visibility,
     suffixIcons: Icons.visibility_off_outlined,
     labelText: 'Password',
     hintText: 'Enter Password',

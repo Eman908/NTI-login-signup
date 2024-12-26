@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup/core/style/heading_style.dart';
 import 'package:login_signup/core/widgets/submit_button.dart';
-import 'package:login_signup/features/login/screens/login.dart';
-import 'package:login_signup/features/signup/widget/signup_form.dart';
+import 'package:login_signup/core/widgets/text_button.dart';
+import 'package:login_signup/features/login/screen/login.dart';
+import 'package:login_signup/features/signup/widgets/sign_builder.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -61,19 +62,15 @@ class _HomeScreenState extends State<SignupScreen> {
                     style: headingStyle(),
                   ),
                   SignupForm(formKey: _formKey),
-                  SizedBox(
-                    width: double.infinity,
-                    height: 48,
-                    child: SubmitButton(
-                      formKey: _formKey,
-                      btnText: 'SignUp',
-                    ),
+                  SubmitButton(
+                    formKey: _formKey,
+                    btnText: 'SignUp',
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Already have an account?"),
-                      TextButton(
+                      textButton(
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -84,11 +81,7 @@ class _HomeScreenState extends State<SignupScreen> {
                             ),
                           );
                         },
-                        child: Text(
-                          "LogIn",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, color: Colors.blue),
-                        ),
+                        txt: "LogIn",
                       ),
                     ],
                   ),

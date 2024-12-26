@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_signup/features/home/screen/home.dart';
+import 'package:login_signup/features/splash/screen/splash.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

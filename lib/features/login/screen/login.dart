@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:login_signup/core/style/heading_style.dart';
 import 'package:login_signup/core/widgets/submit_button.dart';
-import 'package:login_signup/features/login/widgets/login_form.dart';
+import 'package:login_signup/core/widgets/text_button.dart';
+import 'package:login_signup/features/login/widgets/login_builder.dart';
 import 'package:login_signup/features/signup/screen/signup.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -51,19 +52,15 @@ class _HomeScreenState extends State<LoginScreen> {
                     style: headingStyle(),
                   ),
                   LoginForm(formKey: _formKey),
-                  SizedBox(
-                    width: double.infinity,
-                    height: 48,
-                    child: SubmitButton(
-                      formKey: _formKey,
-                      btnText: 'Login',
-                    ),
+                  SubmitButton(
+                    formKey: _formKey,
+                    btnText: 'Login',
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Don't have an account? "),
-                      TextButton(
+                      Text("Don't have an account?"),
+                      textButton(
                         onPressed: () {
                           Navigator.push(
                             context,
@@ -74,11 +71,7 @@ class _HomeScreenState extends State<LoginScreen> {
                             ),
                           );
                         },
-                        child: Text(
-                          "SignUp",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, color: Colors.blue),
-                        ),
+                        txt: "SignUp",
                       ),
                     ],
                   ),
